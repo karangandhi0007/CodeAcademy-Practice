@@ -1,0 +1,8 @@
+#summing the digits of a number
+
+def digit_sum(n):
+  n > 0
+  count = 0
+  for i in n:
+    count += int(i)
+  return count
