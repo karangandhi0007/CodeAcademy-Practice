@@ -1,0 +1,15 @@
+# Write a function called censor that takes two strings, text and word, as input. 
+# It should return the text with the word you chose replaced with asterisks.
+text = raw_input("Provide the text string : ")
+word = raw_input("Provide the word to be replaced : ")
+def censor (text, word):
+    x = text.split()
+    s = len(word)
+    for item in x:
+        if item == word:
+            loc = x.index(item)
+            x.remove(item)
+            item = ("*" * s)
+            x.insert(loc, item)
+    return " ".join(x)
+print (censor(text, word))  
