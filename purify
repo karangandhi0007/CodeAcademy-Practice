@@ -1,0 +1,7 @@
+def purify(sequence):
+    rst = []
+    for x in sequence:
+        if x % 2 == 0:
+            rst.append(x)
+    return rst
+print (purify([1, 2, 4, 5, 8, 12]))
