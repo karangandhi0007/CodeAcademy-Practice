@@ -1,0 +1,12 @@
+def median(lst):
+    rst = sorted(lst)
+    s = len(rst)
+    r = s / 2
+    t = r - 1
+    z = s - 1 / 2
+    if s % 2 == 0:
+        w = (rst[t] + rst[r]) / 2.0
+        return w
+    elif s % 2 != 0:
+        return rst[z]
+print median([0, 1, 2, 3, 4, 5])
